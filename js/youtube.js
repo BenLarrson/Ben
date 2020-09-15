@@ -17,8 +17,8 @@ if (isTouchDevice) {
     var tag = document.createElement('script');
     var videoID = "k1-hVJiAO_0"
     var videoVolume = 100
-    var starttime = 37 // 233.7
-    var endtime = 164 //165
+    var starttime = 28 // 233.7
+    var endtime = 252 //165
     var loopcount = 1
 
     tag.src = "https://www.youtube.com/iframe_api";
