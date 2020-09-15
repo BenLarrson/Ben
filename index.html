@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title></title>
+
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/youtube.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+        <link rel="icon" href="https://i.imgur.com/qhQZ5FV.jpeg">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/star-animation.css">
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+        <center><div id="clockDisplay" class="clockStyle"></div></center>
+			<script>
+			function renderTime() {
+			var currentTime = new Date();
+			var diem = "am";
+			var h = currentTime.getHours();
+			var m = currentTime.getMinutes();
+			var s = currentTime.getSeconds();
+			setTimeout('renderTime()',1000);
+			if (h == 0) {
+				h = 12;
+			} else if (h > 12) {
+				h = h - 12;
+				diem="pm";
+			}
+			if (h < 10) {
+				h = "0" + h;
+			}
+			if (m < 10) {
+				m = "0" + m;
+			}
+			if (s < 10) {
+				s = "0" + s;
+			}
+			var myClock = document.getElementById('clockDisplay');
+			myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+			myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+			}
+			renderTime();
+			</script>
+
+        <script type="text/javascript" src="js/modernizr-custom.min.js"></script>
+        <script type="text/javascript" src="js/youtube.js"></script>
+        <script type="text/javascript" src="js/title.js"></script>
+    	<a class="text_bottom">Stolen (: </a>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    </head>
+    <body>
+        <div id="player"></div>
+        <div id="playerHover"></div>
+        <img class="logo_Start" src="https://i.imgur.com/qhQZ5FV.jpeg">
+        <div class="box">
+            <div class="website">
+                <img href="#" src="https://i.imgur.com/qhQZ5FV.jpeg" />
+                <div class="webname">
+                    <a href="#" class="name">Rhaegar#7138</a>
+                    <br />
+                    <br />
+                </div>
+            </div>
+			<style type="text/css">
+            body {cursor: url(http://www.rw-designer.com/cursor-extern.php?id=117653);}
+            </style>
+            <div id="canvas"></div>
+            <hr />
+            <div class="icons">
+                <a href="https://steamcommunity.com/id/-george/" target="_blank"><i class="fab fa-steam"></i></a>
+                <a>&nbsp;</a>
+                <a>&nbsp;</a>
+                <a href="https://discord.gg/FUDhsjS" target="_blank"><i class="fab fa-discord"></i></a>
+                <a>&nbsp;</a>
+                <a>&nbsp;</a>
+                <a href="https://github.com/BenLarrson" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </body>
+</html>
